@@ -1,0 +1,8 @@
+[ChinaKaoYan]
+# 登陆信息
+mobilephone=xxx
+password=/home/xxx/.chinakaoyan/password
+# Cookie缓存文件
+cookie_cache=var/cache/cookie/cky.cache
+# 用户ID
+user_id=xxx

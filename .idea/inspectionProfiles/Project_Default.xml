@@ -1,0 +1,42 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyIncorrectDocstringInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="4">
+            <item index="0" class="java.lang.String" itemvalue="build" />
+            <item index="1" class="java.lang.String" itemvalue="croniter" />
+            <item index="2" class="java.lang.String" itemvalue="python-crontab" />
+            <item index="3" class="java.lang.String" itemvalue="cryptography" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="zymod_pureftpd.log_file_watch_callback" />
+          <option value="zymod_pureftpd.zy_inotify" />
+          <option value="str.strftime" />
+          <option value="str.day" />
+          <option value="str.minute" />
+          <option value="str.hour" />
+          <option value="str.second" />
+          <option value="http.cookiejar.Cookie.__getitem__" />
+          <option value="dict.name" />
+          <option value="requests.utils" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
