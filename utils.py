@@ -15,6 +15,7 @@ def gen_html_body(table_content: str) -> str:
             th, td {{
                 padding: 10px;
                 border: 1px solid black;
+                text-align: center;
             }}
             th {{
                 background-color: #eee;
@@ -26,8 +27,11 @@ def gen_html_body(table_content: str) -> str:
             <tr>
                 <th>ID</th>
                 <th>访问地址</th>
-                <th>请求方式</th>
-                <th>响应状态码</th>
+                <th>HTTP请求</th>
+                <th>响应代码</th>
+                <th>响应时间 (秒)</th>
+                <th>请求标头</th>
+                <th>响应标头</th>
                 <th>响应内容</th>
             </tr>
             {table_content}
@@ -45,7 +49,7 @@ def gen_html(filename: str, table_data: list) -> None:
     for row in table_data:
         row_content = ""
         for i, cell in enumerate(row):
-            if i == 4:
+            if i == 5 or i == 6 or i == 7:
                 row_content += f'<td><a href="{cell}">{cell}</a></td>'
             elif i == 3 and cell != 200:
                 row_content += f'<td style="color: red;">{cell}错误</td>'
