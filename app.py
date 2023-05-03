@@ -5,14 +5,14 @@ import csv
 import os
 import shutil
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import requests
 from enum import Enum
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
-
+from utils import MetaData
 from bs4 import BeautifulSoup
 from happy_python import dict_to_pretty_json, HappyPyException, str_to_dict, dict_to_str
 from happy_python.happy_log import HappyLogLevel
@@ -28,6 +28,11 @@ table_data = []
 question_code = ""
 current_datetime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
 line_number = 0
+
+total_requests = 0
+successful_requests = 0
+failed_requests = 0
+total_time: datetime
 
 
 class RequestMethod(Enum):
@@ -90,17 +95,26 @@ class RowHandler:
     @staticmethod
     def get_handler(row: CsvRow):
         global line_number
+        global failed_requests
+        global successful_requests
         line_number = row.serial_number
         url = DOMAIN + row.request_uri
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
 
-        response = requests.get(url, headers=headers, cookies=get_cookie_from_cache())
-
-        save_response_body(response)
+        try:
+            response = requests.get(url, headers=headers, cookies=get_cookie_from_cache(), timeout=5)
+        except requests.exceptions:
+            hlog.error("URL: %s, 请求失败" % url)
+            failed_requests += 1
+        else:
+            successful_requests += 1
+            save_response_body(response)
 
     @staticmethod
     def post_handler(row: CsvRow):
         global line_number
+        global failed_requests
+        global successful_requests
         files = None
         line_number = row.serial_number
 
@@ -111,9 +125,14 @@ class RowHandler:
             files = get_requests_body_attachment(row.request_body_attachment)
 
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
-
-        response = requests.post(url, headers=headers, data=data, cookies=get_cookie_from_cache(), files=files)
-        save_response_body(response)
+        try:
+            response = requests.post(url, headers=headers, data=data, cookies=get_cookie_from_cache(), files=files)
+        except requests.exceptions:
+            hlog.error("URL: %s, 请求失败" % url)
+            failed_requests += 1
+        else:
+            successful_requests += 1
+            save_response_body(response)
 
 
 # 每种模式的行处理函数
@@ -285,6 +304,8 @@ def to_csv_row_obj(row: list) -> CsvRow:
 
 
 def parse_csv_file(csv_file: str):
+    global total_requests
+    global total_time
     try:
         with open(csv_file, encoding='UTF-8', mode='r') as f:
             try:
@@ -292,13 +313,15 @@ def parse_csv_file(csv_file: str):
 
                 # 跳过标题行
                 next(reader)
-
+                start_time = time.time()
                 for row in reader:
+                    total_requests += 1
                     row_obj = to_csv_row_obj(row)
                     handler = ROW_HANDLER_MAP.get(RequestMethod[row_obj.request_method])
                     handler(row_obj)
-                    # break
-                    # time.sleep(1)
+                end_time = time.time()
+                total_time = end_time - start_time
+                total_time = str(timedelta(seconds=round(total_time)))
                 hlog.info("请求结束")
             except csv.Error as e:
                 msg = '解析CSV文件行时出现错误\n'
@@ -348,7 +371,8 @@ def main():
     try:
         check_cookie_is_expired(config.mobilephone, config.password)
         parse_csv_file(args.csv_file)
-        gen_html(config.cky_index_html.replace('${current_datetime}', current_datetime), table_data)
+        gen_html(config.cky_index_html.replace('${current_datetime}', current_datetime), table_data,
+                 MetaData(total_requests, successful_requests, failed_requests, total_time))
         shutil.copy('v2.csv', f'var/www/{current_datetime}/{current_datetime}.csv')
     except HappyPyException as e:
         hlog.error(e)

@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>全国各省市2023年考研报考点网报公告及现场确认须知 - 中国考研网</title>
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<meta name=”applicable-device” content=”pc,mobile”>
+<meta name=”MobileOptimized” content=”width”/>
+<meta name=”HandheldFriendly” content=”true”/>
+
+<script type="text/javascript" src="/js/jQuery/jquery.js"></script>
+<script language="javascript" src="/js/globalSearch.js"></script>
+<script src="/js/info2015/Koala.min.1.5.js" type="text/javascript"></script> 
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<link href="/css/style_news2015.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/side_weixin.css">
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+DD_belatedPNG.fix("*");
+</script>
+<![endif]-->
+</head>
+<body>
+
+<div class="sheeptop1">
+   <div class="sheeptop2">
+   <div class="sheeptop3">
+   <div class="sheeptop4">
+     <a href="http://www.chinakaoyan.com/" title="中国考研网">首页</a>
+     <a href="/info/" target="_blank" title="研究生招生信息网">备考</a>
+     <a href="/graduate/" target="_blank" title="考研院校">院校</a>
+     <a href="/admissions/" target="_blank" title="研招网">研招</a>
+     <a href="/tiaoji/" target="_blank" title="考研调剂">调剂</a>
+     <a href="/ask/" target="_blank" title="考研问答">问答</a>
+     <a href="/club/" target="_blank" title="考研论坛">论坛</a>
+     <a href="/note/" target="_blank" title="考研资料">资料</a>
+     <a href="http://download.chinakaoyan.com/" target="_blank" title="考研真题">真题</a>
+     <a href="/info/list/ClassID/22.shtml" target="_blank" title="考研分数线">分数线</a>
+     <a href="/class/" target="_blank" title="考研辅导班">辅导班</a>
+     <a href="/user/" target="_blank" title="会员中心">会员</a>
+   </div>
+   <div class="sheeptop5">
+   <script type="text/javascript" src="/main/getNewLoginState.shtml"></script>
+   </div>
+ </div>
+ </div>
+ </div>
+<div class="hr34"></div>
+<div class="header">
+	<div class="wrap topbox">
+	<!-- logo -->
+		<!--<a href="/info/" class="logo" title="考研信息网资讯"><img src="/images/info2015/logo_zixun.jpg" /></a>-->
+
+		<a href="/info/" class="logo" title="中国考研网资讯"><img src="/images/info2015/150213_info_03.jpg" /></a>
+
+      <div style="margin-top:0px;float:right;">
+	  <a   rel="nofollow"   target="_blank"  href="https://m.gaotuxueyuan.com/gt-activity/sem-search-pc/kaoyanV4_3-pc/index.html?source=sn155550742039500800z&xzp1=z&plan_id=109980928&xzp2=z&gradeCode=0" title="考研培训"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2022/ke/20221027174511.jpeg" /></a>
+      </div>
+
+	</div>
+
+		<div class="navtl" id="navtl" style="margin-top:20px;">
+		<div class="tabbox">
+			<div class="wrap">
+				<div class="change_tab" id="navchange_tab">
+					<div class="link"><a href="/info/main/ClassID/66.shtml" target="_blank" title="考研真题答案解析"><span><strong>真题答案</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/1.shtml" target="_blank"><span><strong>考研时讯</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/2.shtml" target="_blank"><span><strong>招考指南</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/3.shtml" target="_blank"><span><strong>院校招生</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/4.shtml" target="_blank"><span><strong>录取调剂</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/7.shtml" target="_blank"><span><strong>专业硕士</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/5.shtml" target="_blank"><span><strong>公共课</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/6.shtml" target="_blank"><span><strong>专业课</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/60.shtml" target="_blank"><span><strong>考试大纲</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/83.shtml" target="_blank"><span><strong>资源共享</strong></span></a></div>
+					<div class="link"><a href="/info/main/ClassID/8.shtml" target="_blank"><span><strong>我的考研</strong></span></a></div>
+					<div class="link"><a href="/class/" target="_blank"><span><strong>网络课程</strong></span></a></div></br>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="conbox">
+			<div class="wrap">
+				<div class="change_con" id="navchange_con">
+					<div class="split">
+						中国考研网 <a href="http://www.chinakaoyan.com/">考研网</a> &raquo; <a href="/info/">考研信息</a> &raquo; <a href="/info/main/ClassID/2.shtml">招考资讯</a> &raquo; <a href="/info/list/ClassID/12.shtml">报考指南</a> &raquo; <a href="/info/article/id/466327.shtml">全国各省市2023..</a>
+					</div>
+				</div>
+				<ul class="list_box">
+					<li><a href="/note/" target="_blank" title="考研资料"><font color="#ff0000">考研资料</font></a></li>
+					<li><a href="/xindongfang/" target="_blank" title="考研辅导班">网络课程</a></li>
+					<li><a href="/admissions/"title="研招网" target="_blank">研招网</a></li>
+					<li><a href="http://download.chinakaoyan.com/" title="考研真题" target="_blank">考研真题</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--<div  style="margin-top:10px;margin-botton:10px;"><a rel="nofollow"  href="http://chinakaoyan.100xuexi.com/" target="_blank"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2021/20211020122612.jpg" /></a><div>-->
+		<div  style="margin-top:10px;margin-botton:10px;"><a rel="nofollow"  href="https://l.koolearn.com/wnyT8kR" target="_blank"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2023/ke/20230309111511.png" /></a><div>
+
+	</div>
+	
+</div>
+
+<div class="hr20"></div>
+<div class="wrap">
+
+	<div class="w710 f-l">
+		<div class="arcont">
+			<h1>全国各省市2023年考研报考点网报公告及现场确认须知</h1>
+			<div class="time" style="margin-top:5px;margin-bottom:10px;"><a href="/info/list/ClassID/12.shtml" target="_blank" title="更多报考指南相关内容列表">报考指南</a>  来源：中国考研网整理   2022-09-26　 
+            </div>
+
+			<div style="margin-top:10px;margin-bottom:0px;">
+<!--1573524-->
+<script type="text/javascript" src="//p1.chinakaoyan.com/site/production/t54c.js?fajxbs=xpw"></script>
+			</div>
+
+			<div class="cont" style="margin-top:5px;">
+			<ul>
+			<li><a  rel="nofollow"  href="https://l.koolearn.com/wnyT8kR" target="_blank"><font color="#ff0000">2024考研英语全程班 春季班</font></a></li>
+			<li><a  rel="nofollow"  href="https://m.gaotuxueyuan.com/gt-activity/sem-search-pc/kaoyanV4_3-pc/index.html" target="_blank"><font color="#ff0000">2024/2025考研网课咨询（线上/线下 & 1对1/1对多）</font></a></li>
+			</ul>
+			</div>
+
+			<div class="cont"style="margin-top:-5px;margin-bottom:5px;">
+				　<p>从研招网获悉，《<a target="_blank" href="/info/article/id/463359.shtml"><font color="#008080">2023年全国硕士研究生招生工作管理规定</font></a>》和《<a target="_blank" href="/info/article/id/464165.shtml"><font color="#008080">2023年全国硕士研究生招生考试公告</font></a>》已发布，考生报名前请务必仔细查看。同时，2023年硕士研究生招生考试全国各省市考研报考点信息已陆续公布，其中罗列了关于报考点网上报名公告、选择规定、报名费支付、各考点现场确认等信息，我们整理了系统的整理，汇总如下供大家参考。</p>
+<p>相关阅读：<a target="_blank" href="/info/article/id/464439.shtml"><font color="#008080">全国各省市2023年硕士研究生网报公告及报考点设置</font></a></p>
+<p>&nbsp;</p>
+<font color="#ff0000">             </font><font color="#ff0000">             </font>
+<table width="98%" align="center" border="1" cellspacing="1" cellpadding="5">
+    <tbody>
+        <tr>
+            <td colspan="3">
+            <p align="center"><strong>全国各省市2023年考研报考点网报公告及现场确认须知</strong></p>
+            <p align="center"><font color="#ff0000"><strong>红色为2023年信息</strong></font>，黑色<font color="#008080">为2022去年信息</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">
+            <p align="center"><strong>&nbsp;省份</strong></p>
+            </td>
+            <td><strong>&nbsp;网报公告、现场确认</strong>(包含高校报考点)</td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center">&nbsp;北京</p>
+            </td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466213.shtml"><font color="#ff0000">北京各考点</font></a></td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center">&nbsp;天津</p>
+            </td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466177.shtml"><font color="#ff0000">天津各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td>
+            <p align="center">&nbsp;河北</p>
+            </td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466255.shtml"><font color="#ff0000">河北省各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;山西</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466287.shtml"><font color="#ff0000">山西省各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;内蒙古</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466291.shtml"><font color="#ff0000">内蒙古各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;吉林</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466553.shtml"><font color="#ff0000">吉林省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;辽宁</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/413733.shtml"><font color="#ff0000">辽宁省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;黑龙江</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466873.shtml"><font color="#ff0000">黑龙江省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;上海</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466313.shtml"><font color="#ff0000">上海市各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;江苏</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466325.shtml"><font color="#ff0000">江苏省各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;浙江</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466319.shtml"><font color="#ff0000">浙江省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;安徽</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466367.shtml"><font color="#ff0000">安徽省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;福建</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466323.shtml"><font color="#ff0000">福建省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;江西</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466781.shtml"><font color="#ff0000">江西省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;山东</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466373.shtml"><font color="#ff0000">山东省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;河南</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466571.shtml"><font color="#ff0000">河南省各报考点</font></a> </td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;湖北</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466073.shtml"><font color="#ff0000">湖北省各报考点</font></a>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;湖南</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465309.shtml"><font color="#ff0000">湖南省各报考点</font></a>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;广东</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465825.shtml"><font color="#ff0000">广东省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;广西</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465839.shtml"><font color="#ff0000">广西省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;海南</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465863.shtml"><font color="#ff0000">海南省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;重庆</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/467133.shtml"><font color="#ff0000">重庆市各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;四川</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466935.shtml"><font color="#ff0000">四川省各报考点</font></a>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;贵州</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/467129.shtml"><font color="#ff0000">贵州省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;云南</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/467131.shtml"><font color="#ff0000">云南省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;西藏</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465967.shtml"><font color="#ff0000">西藏各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;陕西</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466019.shtml"><font color="#ff0000">陕西省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;甘肃</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/467861.shtml"><font color="#ff0000">甘肃省各报考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;青海</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465979.shtml"><font color="#ff0000">青海省各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;宁夏</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/466959.shtml"><font color="#ff0000">宁夏各考点</font></a></td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;新疆</td>
+            <td>&nbsp;<a target="_blank" href="/info/article/id/465961.shtml"><font color="#ff0000">新疆各报考点</font></a></td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+		</div>
+
+			<div style="margin-top:15px;margin-bottom:0px;">
+<!--6891274-->
+<script type="text/javascript" src="//p1.chinakaoyan.com/common/p/static/k/jms_t_zlg.js"></script>
+			</div>
+			
+
+		<div class="hr20"></div>
+		<div><a target="_blank" href="/note/"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2023/ke/20230423175866.png"/></a></div>
+		<div class="zg_cont_statement01">
+			<p>来源未注明“中国考研网”的资讯、文章等均为转载，本网站转载出于传递更多信息之目的，并不意味着赞同其观点或证实其内容的真实性，如涉及版权问题，请联系本站管理员予以更改或删除。如其他媒体、网站或个人从本网站下载使用，必须保留本网站注明的"稿件来源"，并自负版权等法律责任。</p>
+			<p>来源注明“中国考研网”的文章，若需转载请联系管理员获得相应许可。</p>
+			<p>联系方式：chinakaoyankefu@163.com</p>
+		</div>
+
+			<div style="margin-top:10px;margin-bottom:0px;">
+<!--6891274-->
+<script type="text/javascript" src="//p1.chinakaoyan.com/common/p/static/k/jms_t_zlg.js"></script>
+			</div>
+			
+		<div class="hr20"></div>
+		<div><a target="_blank" href="/xindongfang/detail/3891.shtml"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2022/ke/20221228122912.png"/></a></div>
+		
+			
+		<!--若是无学校属性，则显示如下-->
+		<div class="hr20"></div>
+		<div class="list_boxs">
+			<div class="hd">
+				<span class="f-l s">本类最新资讯</span>
+				<span class="f-r">
+					<a href="/info/" target="_blank">考研信息</a>  |
+					<a href="/tiaoji/" target="_blank">考研调剂</a> |
+					<a href="http://download.chinakaoyan.com/" target="_blank">真题资料</a>  |
+					<a href="/info/list/ClassID/22.shtml" target="_blank">考研分数线</a>  |
+					<a href="/graduate/" target="_blank">研究生院</a> |
+					<a href="/guojiaxian/" target="_blank">考研国家线</a> 
+				</span>
+			</div>
+			<div class="area">
+				<ul class="are_list1">
+                
+					<li><a href="/info/article/id/477639.shtml" target="_blank">2023年硕士研究生考试第三天考什么？</a></li>
+                 
+					<li><a href="/info/article/id/477407.shtml" target="_blank">2023年硕士研究生考试第二天考什么？</a></li>
+                 
+					<li><a href="/info/article/id/475561.shtml" target="_blank">2023年重庆市研招考试咨询电话和邮箱</a></li>
+                 
+					<li><a href="/info/article/id/475253.shtml" target="_blank">全国各省市2023年硕士研究生考试借考公告汇总</a></li>
+                 
+					<li><a href="/info/article/id/474941.shtml" target="_blank">2023全国研考12月24日至26日举行！考生关心的问题都在这里！</a></li>
+                 
+					<li><a href="/info/article/id/474925.shtml" target="_blank">河北省2023年考研初试考生健康信息集中填报公告(一)</a></li>
+                 
+					<li><a href="/info/article/id/474921.shtml" target="_blank">湖南2023年全国硕士研究生招生考试的考生进行信息摸排和健康上报公告</a></li>
+                 
+					<li><a href="/info/article/id/474919.shtml" target="_blank">四川省@全体2023年研考生，靠前微信提示（二）请收好！</a></li>
+                 
+					<li><a href="/info/article/id/474917.shtml" target="_blank">甘肃省2023年硕士研究招生考试“甘肃教育考试易考通”健康打卡公告</a></li>
+                 
+					<li><a href="/info/article/id/474915.shtml" target="_blank">2023年宁夏研考温馨提示（三）</a></li>
+                 
+				</ul>
+			</div>
+		</div>
+
+		
+		<!--网络课程推荐-->
+		<div class="hr30"></div>
+		<div class="list_boxs">
+			<div class="hd"><span class="f-l s"><a href="/xindongfang/" target="_blank">在线辅导中心</a></span></div>
+			<div class="area">
+				<div class="pic" style="margin-right:30px;"><a  rel="nofollow"  href="https://l.koolearn.com/wnyT8kR" target="_blank"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2023/ke/20230309112011.png"></a></div>
+				<ul class="are_list1">
+					<li><a  rel="nofollow"  href="https://l.koolearn.com/wnyT8kR" target="_blank"><font color="#ff0000">2024考研英语全程班 春季班</font></a></li>
+					<li>权威高配师资亲授技巧，教研千锤百炼科学提分。直录播课相结合精讲互动二合一，专业团队精细化作文批改。讲练结合，随学随练稳步提升。支持试听~</li>
+					<li>主讲老师：王江涛、谭剑波、董仲蠡、刘畅等</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="hr20"></div>
+		<div class="list_boxs">
+			<div class="area">
+				<ul class="are_pic1">
+
+					<li>
+						<p><a  rel="nofollow"  href="/xindongfang/detail/3745.shtml" target="_blank"><img src="/up_files/remedial/2023030711425788.jpg"></a></p>
+						<h3><a  rel="nofollow"  href="/xindongfang/detail/3745.shtml" target="_blank">24英语</a></h3>
+					</li>
+					<li>
+						<p><a  rel="nofollow"  href="/xindongfang/detail/3747.shtml" target="_blank"><img src="/up_files/remedial/2023030711371976.jpg"></a></p>
+						<h3><a  rel="nofollow"  href="/xindongfang/detail/3747.shtml" target="_blank">24数学</a></h3>
+					</li>
+					<li>
+						<p><a  rel="nofollow"  href="/xindongfang/detail/3743.shtml" target="_blank"><img src="/up_files/remedial/2023030711473186.jpg"></a></p>
+						<h3><a  rel="nofollow"  href="/xindongfang/detail/3743.shtml" target="_blank">24政治</a></h3>
+					</li>
+					<li>
+						<p><a  rel="nofollow"  href="/xindongfang/detail/3235.shtml" target="_blank"><img src="/up_files/remedial/2022112516422695.jpg"></a></p>
+						<h3><a  rel="nofollow"  href="/xindongfang/detail/3235.shtml" target="_blank">政英联报</a></h3>
+					</li>
+					<li>
+						<p><a  rel="nofollow"  href="/xindongfang/detail/3213.shtml" target="_blank"><img src="/up_files/remedial/2022052417151559.png"/></a></p>
+						<h3><a  rel="nofollow"  href="/xindongfang/detail/3213.shtml" target="_blank">管理类联考</a></h3>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--网络课程推荐-->
+
+			<div style="margin-top:8px;margin-bottom:0px;">
+<!--6885859-->
+<script type="text/javascript" src="//p1.chinakaoyan.com/site/cxw/production/zz/u-zu/source/f.js"></script>
+			</div>
+			
+	</div>
+
+
+<!--info详情页右栏开始-->
+	<div class="w250 f-r" style="margin-top:-10px;">
+		<!--资料链接-->
+        
+
+		<!--ad info右侧-->
+		<div class="hr20"></div>
+		<div class="kyyx">
+			<div class="hdb">你可能喜欢</div>
+			<script type="text/javascript" src="//p1.chinakaoyan.com/site/u/common/p/source/orrm/static/q_ll.js"></script>
+		</div>
+		
+		<!--热点关注-->
+		<div class="hr20"></div>
+		<div class="kyyx">
+			<div class="hdb">重点关注</div>
+			<ul class="ket_lists">
+				<li><a href="/info/article/id/489417.shtml" target="_blank"><font color="#ff0000">2023考研国家线公布</font></a></li>
+				<li><a rel="nofollow"  href="https://m.gaotuxueyuan.com/gt-activity/sem-search-pc/kaoyanV4_3-pc/index.html?source=sn155550742039500800z&xzp1=z&plan_id=109980928&xzp2=z&gradeCode=0" target="_blank"><font color="#ff0000">2024/2025考研网课一对一咨询</font></a></li>
+				<li><a href="/info/article/id/488551.shtml" target="_blank"><font color="#ff0000">2023考研调剂信息发布汇总</font></a></li>
+				<li><a href="/info/article/id/489341.shtml" target="_blank"><font color="#ff0000">2023考研国家线预测</font></a></li>
+				<li><a href="/info/article/id/459767.shtml" target="_blank"><font color="#ff0000">34所自划线院校考研复试分数线</font></a></li>
+				<li><a href="/note/SchoolShow/id/3057.shtml" target="_blank"><font color="#ff0000">199/数学/396/408/法硕考研答疑</font></a></li>
+			</ul>
+		</div>
+
+		<div class="hr20"></div>
+		<div class="kyyx">
+			<div class="hdb">热门课程</div>
+
+			<ul class="ket_lists">
+				<li><a  rel="nofollow"   target="_blank"  href="https://l.koolearn.com/DrNXxhB">2024/2025考研全科辅导咨询</a></li>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3745.shtml" target="_blank">2024考研英语全程班 春季班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3743.shtml" target="_blank">2024考研政治全程班 春季班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3747.shtml" target="_blank">2024考研数学全程班 春季班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/2937.shtml" target="_blank">2024考研英语全程班 早鸟2班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3883.shtml" target="_blank">2024考研政治全程班 早鸟2班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3891.shtml" target="_blank">2024考研数学全程班 早鸟2班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3593.shtml" target="_blank">2024考研法律硕士（非法学）全程班</a>
+				<li><a  rel="nofollow"  href="/xindongfang/detail/3749.shtml" target="_blank">2024考研专业课定制一对一（换校无忧）</a>
+			</ul>
+		</div>
+
+		<div class="hr20"></div>
+		<div class="kyyx">
+			<div class="hdb">考研网课</div>
+				<li><a  rel="nofollow"   target="_blank"  href="https://m.gaotuxueyuan.com/gt-activity/sem-search-pc/kaoyanV4_3-pc/index.html?source=sn155550742039500800z&xzp1=z&plan_id=109980928&xzp2=z&gradeCode=0"><img src="http://cdn.download.chinakaoyan.com/wwwfile/2023/ke/20230116171611.jpeg" /></a></li>
+		</div>
+		
+		<!--考研资料-->
+		<div class="hr20"></div>
+		<div class="kyyx">
+		<div class="hdb">考研资料</div>
+		   <ul class="ket_lists">
+		   <li><a href="/note/NoteShow/id/191039.shtml" target="_blank">山东大学432统计学全套考研资料</a></li>
+		   <li><a href="/note/NoteShow/id/192199.shtml" target="_blank">山东科技大学817管理学考研资料</a></li>
+		   <li><a href="/note/NoteShow/id/196121.shtml" target="_blank">浙江师范大学936物理化学考研复习资</a></li>
+		   <li><a href="/note/NoteShow/id/165783.shtml" target="_blank">浙江大学855环境学考研复习资料</a></li>
+		   <li><a href="/note/NoteShow/id/195803.shtml" target="_blank">大连理工大学333教育综合考研复习资</a></li>
+		   <li><a href="/note/NoteShow/id/195749.shtml" target="_blank">沈阳大学346体育综合考研复习资料</a></li>
+		   <li><a href="/note/NoteShow/id/195685.shtml" target="_blank">大连大学848传热考研复习资料</a></li>
+		   <li><a href="/note/NoteShow/id/195579.shtml" target="_blank">大连民族大学338生物化学考研复习资料</a></li>
+		   </ul>
+		</div>  
+
+		<!--最新资讯-->
+		<div class="hr20"></div>
+		<div class="kyyx">
+			<div class="hdb">最新资讯</div>
+			<ul class="ket_lists">
+				          
+				<li><a href="/info/article/id/495977.shtml" target="_blank">2023年西南科技大学各学院硕士复..</a></li>          
+				<li><a href="/info/article/id/495975.shtml" target="_blank">西南科技大学2023年硕士考试考生..</a></li>          
+				<li><a href="/info/article/id/495973.shtml" target="_blank">淮北师范大学2023年硕士研究生复..</a></li>          
+				<li><a href="/info/article/id/495971.shtml" target="_blank">淮北师范大学2023年硕士研究生复..</a></li>          
+				<li><a href="/info/article/id/495969.shtml" target="_blank">淮北师范大学2023年硕士研究生招..</a></li>          
+				<li><a href="/info/article/id/495967.shtml" target="_blank">淮北师范大学2023年硕士研究生招..</a></li>          
+				<li><a href="/info/article/id/495965.shtml" target="_blank">安庆师范大学2023年硕士研究生拟..</a></li>          
+				<li><a href="/info/article/id/495963.shtml" target="_blank">2023年安庆师范大学研究生复试、..</a></li>
+			</ul>
+		</div>
+
+		<!--研究生招生信息-->
+		<div class="hr20"></div>
+		<div class="ketang">
+			<div class="hdb">省市考研网</div>
+			<ul class="ket_listy">
+				<li><a href="/admissions/yz/province/157.shtml" title="北京研招网">北京</a></li>
+				<li><a href="/admissions/yz/province/1935.shtml" title="天津研招网">天津</a></li>
+				<li><a href="/admissions/yz/province/603.shtml" title="河北研招网">河北</a></li>
+				<li><a href="/admissions/yz/province/1564.shtml" title="山西研招网">山西</a></li>
+				<li><a href="/admissions/yz/province/1244.shtml" title="辽宁研招网">辽宁</a></li>
+				<li><a href="/admissions/yz/province/1029.shtml" title="吉林研招网">吉林</a></li>
+				<li><a href="/admissions/yz/province/1767.shtml" title="上海研招网">上海</a></li>
+				<li><a href="/admissions/yz/province/1077.shtml" title="江苏研招网">江苏</a></li>
+				<li><a href="/admissions/yz/province/2176.shtml" title="浙江研招网">浙江</a></li>
+				<li><a href="/admissions/yz/province/1.shtml" title="安徽研招网">安徽</a></li>
+				<li><a href="/admissions/yz/province/166.shtml" title="福建研招网">福建</a></li>
+				<li><a href="/admissions/yz/province/1152.shtml" title="江西研招网">江西</a></li>
+				<li><a href="/admissions/yz/province/1454.shtml" title="山东研招网">山东</a></li>
+				<li><a href="/admissions/yz/province/748.shtml" title="河南研招网">河南</a></li>
+				<li><a href="/admissions/yz/province/947.shtml" title="湖北研招网">湖北</a></li>
+				<li><a href="/admissions/yz/province/948.shtml" title="湖南研招网">湖南</a></li>
+				<li><a href="/admissions/yz/province/316.shtml" title="广东研招网">广东</a></li>
+				<li><a href="/admissions/yz/province/414.shtml" title="广西研招网">广西</a></li>
+				<li><a href="/admissions/yz/province/583.shtml" title="海南研招网">海南</a></li>
+				<li><a href="/admissions/yz/province/2255.shtml" title="重庆研招网">重庆</a></li>
+				<li><a href="/admissions/yz/province/1777.shtml" title="四川研招网">四川</a></li>
+				<li><a href="/admissions/yz/province/502.shtml" title="贵州研招网">贵州</a></li>
+				<li><a href="/admissions/yz/province/2050.shtml" title="云南研招网">云南</a></li>
+				<li><a href="/admissions/yz/province/1941.shtml" title="西藏研招网">西藏</a></li>
+				<li><a href="/admissions/yz/province/1670.shtml" title="陕西研招网">陕西</a></li>
+				<li><a href="/admissions/yz/province/234.shtml" title="甘肃研招网">甘肃</a></li>
+				<li><a href="/admissions/yz/province/1412.shtml" title="青海研招网">青海</a></li>
+				<li><a href="/admissions/yz/province/1392.shtml" title="宁夏研招网">宁夏</a></li>
+				<li><a href="/admissions/yz/province/1965.shtml" title="新疆研招网">新疆</a></li>
+				<li><a href="/admissions/yz/province/1304.shtml" title="内蒙古研招网">内蒙古</a></li>
+				<li><a href="/admissions/yz/province/877.shtml" title="黑龙江研招网">黑龙江</a></li>
+			</ul>
+		</div>
+
+		<!--右下角TB-->
+		<div class="hr20"></div>
+		<div class="kyyx">
+		  <script type="text/javascript">BAIDU_CLB_fillSlot("694698");</script>
+		</div>
+		<!--右下角TB-->
+	</div>
+<!--info详情页右栏结束-->
+	</div>
+</div>
+
+<div class="hr30"></div>
+<div class="dbnavbox">
+	<div class="wrap">
+		<a href="http://www.chinakaoyan.com/" target="_blank" class="kywbtn" title="中国考研网">中国考研网</a>
+		<div class="list_box">
+			<ul class="split">
+				<h3><a href="/admissions/" target="_blank" title="研招网">研招网</a></h3>
+				<li><a href="http://download.chinakaoyan.com/" target="_blank">考研真题</a></li>
+				<li><a href="/chengji/" target="_blank" title="考研成绩查询">考研成绩</a></li>
+				<li><a href="/guojiaxian/" target="_blank" title="考研国家线">考研国家线</a></li>
+				<li><a href="/zhaosheng/" target="_blank" title="研究生招生简章">招生简章</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a href="/graduate/" target="_blank" class="hd">院校专业</a></h3>
+				<li><a href="/graduate/" target="_blank">招生单位</a></li>
+				<li><a href="/graduate/211.shtml" target="_blank">211大学名单</a></li>
+				<li><a href="/graduate/985.shtml" target="_blank">985大学名单</a></li>
+				<li><a href="/graduate/zhx.shtml" target="_blank">自划线院校</a></li>
+				<li><a href="/graduate/IndexSpeciality.shtml" target="_blank">专业导航</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a href="/tiaoji/" target="_blank" class="hd" title="考研调剂信息">考研调剂</a></h3>
+				<li><a href="/tiaoji/schoollist.shtml" target="_blank" title="研究生调剂信息网">调剂信息网</a></li>
+				<li><a href="/user/tiaojiPlusWrite.shtml" target="_blank">发布调剂</a></li>
+				<li><a href="/tiaoji/liucheng.shtml" target="_blank">考研调剂流程</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a  rel="nofollow"  href="/club/" target="_blank" class="hd">考研论坛</a></h3>
+				<li><a  rel="nofollow"  href="/club/clubHome/clubId/830.shtml" target="_blank">跨专业考研</a></li>
+				<li><a  rel="nofollow"  href="/club/clubHome/clubId/827.shtml" target="_blank">考研调剂</a></li>
+				<li><a  rel="nofollow"  href="/club/clubHome/clubId/826.shtml" target="_blank">考研复试</a></li>
+				<li><a  rel="nofollow"  href="/club/clubHome/clubId/75.shtml" target="_blank">厦门大学</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a href="/ask/" target="_blank" class="hd">考研问答</a></h3>
+				<li><a href="/ask/questionList/classID/16.shtml" target="_blank">跨校跨专业</a></li>
+				<li><a href="/ask/questionList/classID/50.shtml" target="_blank">考场应考</a></li>
+				<li><a href="/ask/questionList/classID/39.shtml" target="_blank">考试科目</a></li>
+				<li><a href="/ask/questionList/classID/25.shtml" target="_blank">考研分数线</a></li>
+				<li><a href="/ask/questionList/classID/38.shtml" target="_blank">报录比</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a href="/class/" target="_blank" class="hd">考研辅导班</a></h3>
+				<li><a href="/xindongfang/category/1.shtml" target="_blank">考研公共课</a></li>
+				<li><a href="/xindongfang/category/7.shtml" target="_blank">统考专业课</a></li>
+				<li><a href="/xindongfang/category/21.shtml" target="_blank">院校专业课</a></li>
+				<li><a href="/xindongfang/category/16.shtml" target="_blank">专业硕士</a></li>
+				<li><a href="/xindongfang/category/28.shtml" target="_blank">英语四六级</a></li>
+				<li><a href="/xindongfang/category/37.shtml" target="_blank">出国留学</a></li>
+			</ul>
+			<ul class="split">
+				<h3><a href="/note/" target="_blank" class="hd">试卷资料</a></h3>
+				<li><a href="http://download.chinakaoyan.com/" target="_blank">考研真题</a></li>
+				<li><a href="/note/" target="_blank">笔记资料</a></li>
+			</ul>
+		</div>
+		<div class="searchbox">
+        <form id="globalSearch2" method="post" action="http://www.chinakaoyan.com/info/list.shtml" target="_blank">
+        <select class="sheepnav6" onChange="changeSearch(this.value)" style=" display:none;">
+                 <option value="100">资讯</option>                 
+         </select>
+			<input class="txtArea" name="Search" value="输入查询" onFocus="if(this.value=='输入查询')this.value=''" type="text" />
+            <a href="#" onClick="document.getElementById('globalSearch2').submit();" class="subtn" title="查询">查询</a>
+         </form>
+            
+		</div>
+	</div>
+</div>
+
+<!-- sideWx -->
+<div class="side-wx">
+    <span class="close">×关闭</span>
+    <img src="http://download.chinakaoyan.com/wwwfile/20171222172611.jpg">
+        <p>扫码关注<br>了解考研最新消息</p>
+</div>
+
+<div class="Copyright">
+	<div class="main">
+		<p>
+        <a  rel="nofollow"  href="/about/main/id/3.shtml">网站介绍</a>
+        <a  rel="nofollow"  href="/about/main/id/5.shtml">关于我们</a>
+        <a  rel="nofollow"  href="/about/main/id/6.shtml">联系方式</a> 
+        <a  rel="nofollow"  href="/about/main/id/12.shtml">友情链接</a>
+        <a  rel="nofollow"  href="/about/main/id/10.shtml">广告业务</a>
+        <a  rel="nofollow"  href="/about/main/id/7.shtml">帮助信息</a></p>
+		<p>1998-2022 ChinaKaoyan.com Network Studio. All Rights Reserved.      沪ICP备12018245号</p>
+	</div>
+</div>
+
+
+<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/sideWx.js"></script>
+<script>
+var str ='';
+	var nn = 0;
+	$('#fs_A2').find('.fcon').each(function(i){
+		nn = i+1;
+		str += '<a href="javascript:void(0)" hidefocus="true" target="_self"><i>'+nn+'</i></a>'; 
+		$('#fs_A2').find('.A2fBt').html(str);
+	});
+	
+Qfast.add('fx', { path: "js/plusfx1.0.min.js", type: "js" });
+Qfast.add('widgets', { path: "js/Terminator2.2.min.js", type: "js", requires: ['fx'] });
+    Qfast(false, 'widgets', function () {
+        K.tabs({
+            id: 'fs_A2',   //焦点图包裹id
+            conId: "A2fPic",  //** 大图域包裹id
+			tabId:"A2fBt", //** 按钮域包裹id
+			tabTn:"a", // ** 按钮配置元素
+	        conCn: '.fcon', //** 大图域配置class			
+            auto: 1,   //自动播放
+            effect: 'fade',   //效果配置	
+			vertical:'left', //焦点图滚动方向				
+            eType: 'mouseover', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+            interval: 2000  //** 停顿时间
+         })
+
+});	
+Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'toolPic', 
+                conId: "toolBox", 
+				//tabId:"D1fBt",
+				//tabTn:"span",
+	            conCn: 'li',
+                auto: 0, 
+                effect: 'fade',
+                eType: 'click', 
+				pageBt:true,
+				bns: ['.pre', '.next'],		
+                interval: 5000 
+            })
+
+        })
+Qfast(false,'widgets',function(){           
+	K.scroll({                
+		id:"picScroll",         
+		effect:"scroll",           
+		scWr:".picList",               
+		scrElem:".picItem",       
+		scrNum:1,       
+		auto:1,            
+		vertical:"left",    
+		loop:true,           
+		interval:5000,           
+		bns: ['.picPrev', '.picNext'],
+		prevMouseClass:"onPrev",
+		nextMouseClass:"onNext"
+	})   
+})  
+Qfast(false,'widgets', function () {  
+	K.tabs({  
+		id: 'navtl',    
+		tabId: "navchange_tab", 
+		tabCn:'.lk', 
+		conId: "navchange_con",                
+		conCn: '.split',            
+		eType: 'mouseover',  
+		auto: 0,   
+		current: 0,               
+		interval: 2000 
+	})  
+})
+
+//搜索切换
+	$(".list_menu li").hover(function(){
+		$(this).addClass("selected").siblings().removeClass("selected");  
+		var index = $(".list_menu li").index(this);  
+		$(".list_box > div").eq(index).show().siblings().hide(); 
+	})
+
+</script>
+
+<script>
+(function(){
+})();
+</script>
+
+<!--gt-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try 
+{var pageTracker = _gat._getTracker("UA-13040595-1");
+pageTracker._setDomainName(".chinakaoyan.com");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!--gt-->
+
+<!--bt-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb39c8daefe867a19aec651fe9bb57881' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--bt-->
+
+</body>
+</html>页面加载时间：0.038861秒
