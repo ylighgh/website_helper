@@ -23,7 +23,7 @@ from common import hlog, config, headers
 
 hlog = hlog
 
-DOMAIN = 'http://'
+DOMAIN = 'https://'
 table_data = []
 question_code = ""
 current_datetime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
@@ -94,25 +94,27 @@ class ColInfo(Enum):
 class RowHandler:
     @staticmethod
     def get_handler(row: CsvRow):
-        global line_number
+        global line_number, response
         global failed_requests
         global successful_requests
         line_number = row.serial_number
         url = DOMAIN + row.request_uri
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
-
         try:
-            response = requests.get(url, headers=headers, cookies=get_cookie_from_cache(), timeout=5)
-        except requests.exceptions:
-            hlog.error("URL: %s, 请求失败" % url)
+            response = requests.get(url, headers=headers, cookies=get_cookie_from_cache())
+            if response.status_code != 200:
+                failed_requests += 1
+        except Exception as e:
+            hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
             failed_requests += 1
+            save_response_body(response)
         else:
             successful_requests += 1
             save_response_body(response)
 
     @staticmethod
     def post_handler(row: CsvRow):
-        global line_number
+        global line_number, response
         global failed_requests
         global successful_requests
         files = None
@@ -127,9 +129,12 @@ class RowHandler:
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
         try:
             response = requests.post(url, headers=headers, data=data, cookies=get_cookie_from_cache(), files=files)
-        except requests.exceptions:
-            hlog.error("URL: %s, 请求失败" % url)
+            if response.status_code != 200:
+                failed_requests += 1
+        except Exception as e:
+            hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
             failed_requests += 1
+            save_response_body(response)
         else:
             successful_requests += 1
             save_response_body(response)
@@ -369,10 +374,11 @@ def main():
     hlog.set_level(args.log_level)
 
     try:
-        check_cookie_is_expired(config.mobilephone, config.password)
+        # check_cookie_is_expired(config.mobilephone, config.password)
         parse_csv_file(args.csv_file)
-        gen_html(config.cky_index_html.replace('${current_datetime}', current_datetime), table_data,
-                 MetaData(total_requests, successful_requests, failed_requests, total_time))
+        save_position = config.cky_index_html.replace('${current_datetime}', current_datetime)
+        gen_html(save_position, table_data, MetaData(total_requests, successful_requests, failed_requests, total_time))
+        hlog.info("网页保存位置: %s" % save_position)
         shutil.copy('v2.csv', f'var/www/{current_datetime}/{current_datetime}.csv')
     except HappyPyException as e:
         hlog.error(e)

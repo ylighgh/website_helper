@@ -94,7 +94,6 @@ def gen_html_body(table_content: str, metadata: MetaData) -> str:
     return html
 
 
-
 def gen_html(filename: str, table_data: list, metadata: MetaData) -> None:
     table_content = ""
 
