@@ -9,11 +9,13 @@ class MetaData:
     successful_requests: int
     failed_requests: int
     total_time: datetime
+    avg_response_time: float
 
-    def __init__(self, total_requests_count, successful_requests_count, failed_requests_count, total_time_count):
+    def __init__(self, total_requests_count, successful_requests_count, failed_requests_count, avg_response_time,total_time_count):
         self.total_time = total_time_count
         self.total_requests = total_requests_count
         self.successful_requests = successful_requests_count
+        self.avg_response_time = avg_response_time
         self.failed_requests = failed_requests_count
 
 
@@ -64,12 +66,14 @@ def gen_html_body(table_content: str, metadata: MetaData) -> str:
                 <th>总请求数</th>
                 <th>成功的请求数</th>
                 <th>失败的请求数</th>
-                <th>总运行时间</th>
+                <th>平均响应时间 (秒)</th>
+                <th>程序运行时间</th>
             </tr>
             <tr>
                 <td>{metadata.total_requests}</td>
                 <td>{metadata.successful_requests}</td>
                 <td>{metadata.failed_requests}</td>
+                <td>{metadata.avg_response_time}</td>
                 <td>{metadata.total_time}</td>
             </tr>
         </table>

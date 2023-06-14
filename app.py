@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 import argparse
+import threading
 import csv
+import hashlib
 import os
 import shutil
 import time
@@ -21,6 +23,9 @@ from utils import gen_html
 
 from common import hlog, config, headers
 
+# 用于控制并发线程数量的信号量
+semaphore = threading.Semaphore(10)
+
 hlog = hlog
 
 DOMAIN = 'https://'
@@ -33,6 +38,7 @@ total_requests = 0
 successful_requests = 0
 failed_requests = 0
 total_time: datetime
+url_status_dict = dict()
 
 
 class RequestMethod(Enum):
@@ -104,13 +110,14 @@ class RowHandler:
             response = requests.get(url, headers=headers, cookies=get_cookie_from_cache())
             if response.status_code != 200:
                 failed_requests += 1
+                return response
         except Exception as e:
             hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
             failed_requests += 1
-            save_response_body(response)
+            return response
         else:
             successful_requests += 1
-            save_response_body(response)
+            return response
 
     @staticmethod
     def post_handler(row: CsvRow):
@@ -131,13 +138,27 @@ class RowHandler:
             response = requests.post(url, headers=headers, data=data, cookies=get_cookie_from_cache(), files=files)
             if response.status_code != 200:
                 failed_requests += 1
+                return response
         except Exception as e:
             hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
             failed_requests += 1
-            save_response_body(response)
+            return response
         else:
             successful_requests += 1
-            save_response_body(response)
+            return response
+
+
+class UrlStatus:
+    row_id: int
+    row: CsvRow
+    resp: Response
+    status: int
+
+    def __init__(self, row_id, row, resp=None, status=0) -> None:
+        self.row_id = row_id
+        self.row = row
+        self.resp = resp
+        self.status = status
 
 
 # 每种模式的行处理函数
@@ -150,16 +171,18 @@ ROW_HANDLER_MAP = {
 COL_SIZE = len(ColInfo)
 
 
-def save_response_body(response: Response):
+def generate_hash(data, algorithm='sha256'):
+    hash_object = hashlib.new(algorithm)
+    hash_object.update(data.encode('utf-8'))
+    hash_value = hash_object.hexdigest()
+    return hash_value
+
+
+def save_response_body(row_id: int, res_body: Response):
     global table_data
+    uri = urlparse(res_body.url).path
 
-    response_header = response.headers
-    request_header = response.request.headers
-
-    # print('响应内容: %s' % response.text)
-    uri = urlparse(response.url).path
-
-    get_verify_code(uri, response)
+    get_verify_code(uri, res_body)
 
     # 获取当前时间戳
     timestamp = int(time.time())
@@ -185,17 +208,17 @@ def save_response_body(response: Response):
     filename_response_header = os.path.join(file_store_path, 'response_headers.json')
 
     with open(filename_request_header, 'w', encoding='UTF-8') as f:
-        f.write(dict_to_str(dict(response.request.headers)))
+        f.write(dict_to_str(dict(res_body.request.headers)))
 
     with open(filename_response_header, 'w', encoding='UTF-8') as f:
-        f.write(dict_to_str(dict(response.headers)))
+        f.write(dict_to_str(dict(res_body.headers)))
 
     with open(filename_body, 'w', encoding='UTF-8') as f:
-        f.write(response.text.replace('gb2312', 'utf-8'))
+        f.write(res_body.text.replace('gb2312', 'utf-8'))
 
     table_data.append(
-        [line_number, response.url, response.request.method, response.status_code,
-         round(response.elapsed.total_seconds(), 3),
+        [row_id, res_body.url, res_body.request.method, res_body.status_code,
+         round(res_body.elapsed.total_seconds(), 3),
          filename_request_header.replace('var/www/' + current_datetime + '/', ''),
          filename_response_header.replace('var/www/' + current_datetime + '/', ''),
          filename_body.replace('var/www/' + current_datetime + '/', '')])
@@ -308,6 +331,16 @@ def to_csv_row_obj(row: list) -> CsvRow:
     return csv_row
 
 
+def process_url(url, row):
+    handler = ROW_HANDLER_MAP.get(RequestMethod[row.request_method])
+    resp = handler(row)
+    # 修改 URL 状态为已访问
+    url.status = 1
+    url.resp = resp
+    # 释放信号量
+    semaphore.release()
+
+
 def parse_csv_file(csv_file: str):
     global total_requests
     global total_time
@@ -318,12 +351,30 @@ def parse_csv_file(csv_file: str):
 
                 # 跳过标题行
                 next(reader)
-                start_time = time.time()
+
+                # 建立字典
                 for row in reader:
-                    total_requests += 1
                     row_obj = to_csv_row_obj(row)
-                    handler = ROW_HANDLER_MAP.get(RequestMethod[row_obj.request_method])
-                    handler(row_obj)
+                    url_status_dict[generate_hash(row_obj.request_uri)] = UrlStatus(row_obj.serial_number, row_obj)
+
+                total_requests = len(url_status_dict)
+
+                # 基于字典请求url
+                start_time = time.time()
+
+                threads = []
+                for k, v in url_status_dict.items():
+                    if v.status == 0:
+                        # 获取信号量，控制并发数量
+                        semaphore.acquire()
+                        t = threading.Thread(target=process_url, args=(v, v.row))
+                        threads.append(t)
+                        t.start()
+
+                # 等待所有线程完成
+                for t in threads:
+                    t.join()
+
                 end_time = time.time()
                 total_time = end_time - start_time
                 total_time = str(timedelta(seconds=round(total_time)))
@@ -376,8 +427,18 @@ def main():
     try:
         # check_cookie_is_expired(config.mobilephone, config.password)
         parse_csv_file(args.csv_file)
+        total_response_time = 0
+        for k, v in url_status_dict.items():
+            if v.resp is not None:
+                total_response_time += round(v.resp.elapsed.total_seconds(), 3)
+            else:
+                total_response_time += 0
+            save_response_body(v.row_id, v.resp)
+        avg_response_time = round(total_response_time / total_requests, 3)
         save_position = config.cky_index_html.replace('${current_datetime}', current_datetime)
-        gen_html(save_position, table_data, MetaData(total_requests, successful_requests, failed_requests, total_time))
+        gen_html(save_position, table_data,
+                 MetaData(total_requests, successful_requests, failed_requests, avg_response_time,
+                          total_time))
         hlog.info("网页保存位置: %s" % save_position)
         shutil.copy('v2.csv', f'var/www/{current_datetime}/{current_datetime}.csv')
     except HappyPyException as e:

@@ -1,16 +1,17 @@
 编号,一级标题,二级标题,三级标题,四级标题,链接标题,HTTP方法,URI,HTTP代码,载荷,附件
-2,考研报名,考研流程,考研目标确定,NULL,研究生招生单位,GET,/graduate/,200,NULL,NULL
+1,考研报名,考研流程,考研目标确定,NULL,研究生招生单位,GET,/graduate/,200,NULL,NULL
+2,考研报名,考生调剂,NULL,NULL,NULL,GET,/tiaoji/detail/id/381233.shtml,200,NULL,NULL
 3,考研报名,考研流程,复习计划制定,NULL,考研复习安排表,GET,/info/article/id/303511.shtml,200,NULL,NULL
 4,考研报名,考研流程,考研基础复习,NULL,公共课复习,GET,/info/main/ClassID/5/sum/class_list.shtml,200,NULL,NULL
-5,考研报名,招生资讯,考研时间,NULL,2023考研时间表,GET,/info/article/id/463355.shtml,200,NULL,NULL
+5,考研报名,招生资讯,考研时间,NULL,2022考研时间表,GET,/info/article/id/410979.shtml,200,NULL,NULL
 6,考研报名,招生资讯,考研时间,NULL,2023考研日程表,GET,/info/article/id/463343.shtml,200,NULL,NULL
 7,考研报名,招生资讯,考研时间,NULL,2022考研时间定了！正式网报时间有变化,GET,/info/article/id/410967.shtml,200,NULL,NULL
 8,考研报名,招生资讯,政策规章,NULL,2023年全国硕士研究生招生考试公告,GET,/info/article/id/464165.shtml,200,NULL,NULL
 9,考研报名,招生资讯,政策规章,NULL,2023年全国硕士研究生招生工作管理规定,GET,/info/article/id/463359.shtml,200,NULL,NULL
 10,考研报名,招生资讯,政策规章,NULL,教育部部署做好2023年全国硕士研究生考试招生工作,GET,/info/article/id/463341.shtml,200,NULL,NULL
-11,考研报名,招生资讯,报考指南,NULL,2023年考研报名人数汇总_考研报名人数多少,GET,/info/article/id/471273.shtml,200,NULL,NULL
-12,考研报名,招生资讯,报考指南,NULL,全国各省市2023年考研报考点网报公告及现场确认须知,GET,/info/article/id/466327.shtml,200,NULL,NULL
-13,考研报名,招生资讯,报考指南,NULL,全国各省市2023年硕士研究生网报公告及报考点设置,GET,/info/article/id/463343.shtml,200,NULL,NULL
+11,考研报名,招生资讯,报考指南,NULL,2023年考研报名人数汇总_考研报名人数多少,GET,/info/article/id/501505.shtml,200,NULL,NULL
+12,考研报名,招生资讯,报考指南,NULL,全国各省市2023年考研报考点网报公告及现场确认须知,GET,/info/article/id/501499.shtml,200,NULL,NULL
+13,考研报名,招生资讯,报考指南,NULL,全国各省市2023年硕士研究生网报公告及报考点设置,GET,/info/article/id/501485.shtml,200,NULL,NULL
 14,考研报名,招生资讯,考研常识,NULL,2023考研常识：五类数学的区别,GET,/info/article/id/461549.shtml,200,NULL,NULL
 15,考研报名,招生资讯,考研常识,NULL,2023考研常识：英语一与英语二的区别,GET,/info/article/id/461547.shtml,200,NULL,NULL
 16,考研报名,招生资讯,考研常识,NULL,2023考研常识：全国初试成绩基本要求分区是如何划定的,GET,/info/article/id/461535.shtml,200,NULL,NULL
@@ -44,8 +45,8 @@
 44,考研报名,招生信息,专业目录,NULL,天津商业大学2023年招收港澳台硕士研究生专业目录,GET,/info/article/id/485637.shtml,200,NULL,NULL
 45,考研报名,招生信息,专业目录,NULL,西南石油大学2023年士兵计划非全日制硕士研究生招生专业目录,GET,/info/article/id/483521.shtml,200,NULL,NULL
 46,考研报名,招生信息,专业目录,NULL,西南石油大学2023年硕士推免生招生专业目录,GET,/info/article/id/483525.shtml,200,NULL,NULL
-47,考研报名,招生信息,参考书目,NULL,2023年天津师范大学硕士研究生招生考试各学部、学院复试参考书目,GET,/info/article/id/493695.shtml,200,NULL,NULL
-48,考研报名,招生信息,参考书目,NULL,中华女子学院2023年研究生招生部分专业复试推荐阅读书目,GET,/info/article/id/493013.shtml,200,NULL,NULL
+47,考研报名,招生信息,参考书目,NULL,2023年天津师范大学硕士研究生招生考试各学部、学院复试参考书目,GET,/note/NoteShow/id/195749.shtml,200,NULL,NULL
+48,考研报名,招生信息,参考书目,NULL,中华女子学院2023年研究生招生部分专业复试推荐阅读书目,GET,/info/article/id/501471.shtml,200,NULL,NULL
 49,考研报名,招生信息,参考书目,NULL,江苏理工学院2023年硕士研究生招生考试复试科目主要参考书,GET,/info/article/id/491395.shtml,200,NULL,NULL
 50,考研报名,招生信息,在职硕士,NULL,2022年四川轻化工大学硕士研究生招生考试参考书目,GET,/info/article/id/419433.shtml,200,NULL,NULL
 51,考研报名,招生信息,在职硕士,NULL,2020考研备考：在职研究生到底要不要考？,GET,/info/article/id/272419.shtml,200,NULL,NULL
@@ -139,7 +140,7 @@
 139,招生单位,大纲,研招备考,复习指导,2024考研经济学原理：微观经济学核心考点(2),GET,/info/article/id/477681.shtml,200,NULL,NULL
 140,招生单位,大纲,研招备考,复习指导,2024考研管理学：旅游资源,GET,/info/article/id/477679.shtml,200,NULL,NULL
 141,招生单位,大纲,考研资料,专业课资料推荐,山大考研资料,GET,/note/SchoolShow/id/350.shtml,200,NULL,NULL
-142,招生单位,大纲,考研资料,专业课资料推荐,北大考研资料,GET,/note/SchoolShow/id/82.shtml,200,NULL,NULL
+142,招生单位,大纲,考研资料,专业课资料推荐,北大考研资料,GET,/note/SchoolShow/id/84.shtml,200,NULL,NULL
 143,招生单位,大纲,考研资料,专业课资料推荐,华师大考研资料,GET,/note/SchoolShow/id/605.shtml,200,NULL,NULL
 144,招生单位,大纲,热门课程,NULL,2021考研英语进阶全程班,GET,/xindongfang/detail/3433.shtml,200,NULL,NULL
 145,招生单位,大纲,热门课程,NULL,2021考研数学零基础进阶全程班,GET,/xindongfang/detail/3187.shtml,200,NULL,NULL
@@ -152,7 +153,7 @@
 152,招生单位,大纲,我的考研,资源共享,2023初试成绩公布前 研考生关注3件事,GET,/info/article/id/484871.shtml,200,NULL,NULL
 153,招生单位,大纲,我的考研,考研答疑,受疫情影响，研究生考试地点能否更换呢,GET,/ask/questionShow/id/259563.shtml,200,NULL,NULL
 154,招生单位,大纲,我的考研,考研答疑,考研英语二试卷结构是怎样的,GET,/ask/questionShow/id/259555.shtml,200,NULL,NULL
-155,招生单位,大纲,我的考研,考研答疑,往届生没工作考研一定要回户籍所在地吗,GET,/ask/questionShow/id/259547.shtml,200,NULL,NULL
+155,招生单位,大纲,我的考研,考研答疑,往届生没工作考研一定要回户籍所在地吗,GET,/ask/questionShow/id/259548.shtml,200,NULL,NULL
 156,招生单位,报录比,最新考研报录比,NULL,首都体育学院2023年硕士研究生调剂批次拟录取名单公..,GET,/info/article/id/493563.shtml,200,NULL,NULL
 157,招生单位,报录比,最新考研报录比,NULL,首都体育学院2023年硕士研究生第一批拟录取名单公示,GET,/info/article/id/493559.shtml,200,NULL,NULL
 158,招生单位,报录比,最新考研报录比,NULL,2023年中央民族大学硕士招生专项计划拟录取名单公示,GET,/info/article/id/493453.shtml,200,NULL,NULL
