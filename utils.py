@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-
+import random
+import string
 from datetime import datetime
+from urllib.parse import urlparse
+
+from happy_python import str_to_dict
+from requests_toolbelt import MultipartEncoder
 
 
 class MetaData:
@@ -11,7 +16,8 @@ class MetaData:
     total_time: datetime
     avg_response_time: float
 
-    def __init__(self, total_requests_count, successful_requests_count, failed_requests_count, avg_response_time,total_time_count):
+    def __init__(self, total_requests_count, successful_requests_count, failed_requests_count, avg_response_time,
+                 total_time_count):
         self.total_time = total_time_count
         self.total_requests = total_requests_count
         self.successful_requests = successful_requests_count
@@ -118,3 +124,56 @@ def gen_html(filename: str, table_data: list, metadata: MetaData) -> None:
 
     with open(filename, "w") as f:
         f.write(body_content)
+
+
+def get_request_headers(url: str, content_type: str) -> dict:
+    parsed_url = urlparse(url)
+    scheme = parsed_url.scheme
+    netloc = parsed_url.netloc
+
+    headers = {
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,'
+                  'application/signed-exchange;v=b3;q=0.7',
+        'Content-Type': content_type,
+        'Host': netloc,
+        'Origin': f'{scheme}://{netloc}',
+        'Referer': url,
+        'User-Agent': 'GeekCamp/1.0'
+    }
+
+    return headers
+
+
+def get_request_body(json_file: str):
+    with open(json_file, encoding='UTF-8', mode='r') as f:
+        file_content = f.read()
+
+    json_data = str_to_dict(file_content)
+    boundary = '----WebKitFormBoundary' \
+               + ''.join(random.sample(string.ascii_letters + string.digits, 16))
+
+    request_body = MultipartEncoder(fields=json_data, boundary=boundary)
+
+    return request_body
+
+
+def get_domain(domain: str):
+    if domain == 'www.chinakaoyan.com':
+        return 'https://www.chinakaoyan.com'
+    elif domain == 'h.chinakaoyan.com:8080':
+        return 'http://h.chinakaoyan.com:8080'
+    else:
+        return f'https://{domain}'
+
+# def get_request_body(json_file: str) -> dict:
+#     global question_code
+#
+#     with open(json_file, encoding='UTF-8', mode='r') as f:
+#         file_content = f.read()
+#
+#     json_data = str_to_dict(file_content)
+#
+#     if 'questioncode' in json_data:
+#         json_data['questioncode'] = question_code
+#
+#     return json_data

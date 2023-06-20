@@ -1,12 +1,13 @@
 {
-        "title": "testpost22",
-        "question": "testpost22",
-        "ClassLevel1": 7,
-        "ClassLevel2": 21,
-        "province": "",
-        "schoolId": "",
-        "subType": "",
-        "specialityId": "",
-        "mpn": 0,
-        "questioncode": ""
-    }
+    "VoteName": "cdgeekcamptest16",
+    "GroupID": "",
+    "VoteStart": "",
+    "VoteEnd": "",
+    "VoteDayNum": "1",
+    "MaxNum": "",
+    "demandTotal": "",
+    "act": "Insert",
+    "module": "vote",
+    "id": "",
+    "fromurl": ""
+}

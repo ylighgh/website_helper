@@ -9,9 +9,6 @@ class ApplicationConfig(HappyConfigBase):
         super().__init__()
 
         self.section = 'ChinaKaoYan'
-        self.mobilephone = ''
-        self.password = ''
-        self.cookie_cache = ''
-        self.user_id = ''
+        self.cookie = ''
         self.cky_html_directory = ''
         self.cky_index_html = ''

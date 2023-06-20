@@ -1,0 +1,20 @@
+{
+    "speciality[]": "877",
+    "ClassID": "2",
+    "name": "cdgeekcamptest17",
+    "author": "",
+    "publisher": "",
+    "isbn": "",
+    "page": "",
+    "publish_time": "",
+    "print_time": "",
+    "price": "",
+    "discount": "",
+    "sale_price": "",
+    "book_image": "",
+    "valid": "Y",
+    "notes": "",
+    "Submit": "",
+    "module": "book",
+    "act": "insert"
+}

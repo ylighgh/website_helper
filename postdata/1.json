@@ -1,0 +1,14 @@
+{
+    "username": "cdgeekcamptest1",
+    "password": "cdgeekcamptest1",
+    "repeat": "cdgeekcamptest1",
+    "email": "",
+    "usergroupid": "6",
+    "province": "",
+    "schoolId": "",
+    "org": "",
+    "name": "测试",
+    "Submit": "提交",
+    "act": "insert",
+    "module": "user"
+}

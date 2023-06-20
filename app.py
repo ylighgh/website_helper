@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 import argparse
+import string
 import threading
 import csv
 import hashlib
 import os
 import shutil
 import time
+import re
 from datetime import datetime, timedelta
+import random
 
 import requests
 from enum import Enum
@@ -20,15 +23,13 @@ from happy_python import dict_to_pretty_json, HappyPyException, str_to_dict, dic
 from happy_python.happy_log import HappyLogLevel
 from requests import Response
 from utils import gen_html
+from utils import get_request_headers, get_request_body, get_domain
 
-from common import hlog, config, headers
-
-# 用于控制并发线程数量的信号量
-semaphore = threading.Semaphore(10)
+from common import hlog, config, headers, cookies
 
 hlog = hlog
 
-DOMAIN = 'https://'
+DOMAIN = ""
 table_data = []
 question_code = ""
 current_datetime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
@@ -39,6 +40,10 @@ successful_requests = 0
 failed_requests = 0
 total_time: datetime
 url_status_dict = dict()
+semaphore = threading.Semaphore(10)
+
+# 查询变量
+COLLEGE_ID = 0
 
 
 class RequestMethod(Enum):
@@ -107,7 +112,11 @@ class RowHandler:
         url = DOMAIN + row.request_uri
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
         try:
-            response = requests.get(url, headers=headers, cookies=get_cookie_from_cache())
+            if 'h.chinakaoyan.com' in url:
+                response = requests.get(url, headers=headers, cookies=cookies)
+                # get_college_id(url, response)
+            else:
+                response = requests.get(url, headers=headers)
             if response.status_code != 200:
                 failed_requests += 1
                 return response
@@ -130,12 +139,14 @@ class RowHandler:
         url = DOMAIN + row.request_uri
 
         data = get_request_body(row.request_body)
+        post_headers = get_request_headers(url, data.content_type)
+
         if row.request_body_attachment != 'NULL':
             files = get_requests_body_attachment(row.request_body_attachment)
 
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
         try:
-            response = requests.post(url, headers=headers, data=data, cookies=get_cookie_from_cache(), files=files)
+            response = requests.post(url, headers=post_headers, data=data, cookies=cookies, files=files)
             if response.status_code != 200:
                 failed_requests += 1
                 return response
@@ -171,6 +182,13 @@ ROW_HANDLER_MAP = {
 COL_SIZE = len(ColInfo)
 
 
+def generate_random_string():
+    res = ''.join(random.choices(string.ascii_lowercase +
+                                 string.digits, k=5))
+
+    return str(res)
+
+
 def generate_hash(data, algorithm='sha256'):
     hash_object = hashlib.new(algorithm)
     hash_object.update(data.encode('utf-8'))
@@ -182,10 +200,10 @@ def save_response_body(row_id: int, res_body: Response):
     global table_data
     uri = urlparse(res_body.url).path
 
-    get_verify_code(uri, res_body)
+    # get_verify_code(uri, res_body)
 
     # 获取当前时间戳
-    timestamp = int(time.time())
+    random_str = generate_random_string()
 
     www = Path(config.cky_html_directory + current_datetime)
 
@@ -199,7 +217,7 @@ def save_response_body(row_id: int, res_body: Response):
         file_store_path.mkdir(exist_ok=True, parents=True)
     else:
         base_filename, ext = os.path.splitext(str(file_store_path))
-        dirname = f"{base_filename}_{timestamp}{ext}"
+        dirname = f"{base_filename}_{random_str}{ext}"
         file_store_path = Path(dirname)
         file_store_path.mkdir(exist_ok=True, parents=True)
 
@@ -224,6 +242,26 @@ def save_response_body(row_id: int, res_body: Response):
          filename_body.replace('var/www/' + current_datetime + '/', '')])
 
 
+def get_college_id(url: str, response: Response):
+    global COLLEGE_ID
+    if '/admin2m0GHi12MA12ge/module/index.php?school=%CB%C4%B4%A8%CA%A6%B7%B6&college=&act=list&module=college' \
+       '&Submit3=%CC%E1%BD%BB' in url:
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # 找到所有带有onclick属性的a标签
+        a_tags = soup.find_all('a', attrs={'onclick': True})
+
+        # 遍历a标签，提取包含特定文字的id
+        for a_tag in a_tags:
+            onclick_value = a_tag['onclick']
+            if 'test' in onclick_value and '删除学院' in onclick_value:
+                href_value = a_tag['href']
+                id_match = re.search(r'id=(\d+)', href_value)
+                if id_match:
+                    college_id = id_match.group(1)
+                    # print('学院ID:', college_id)
+
+
 def get_verify_code(uri: str, response: Response):
     global question_code
     if uri == '/user/ask.shtml' and response.request.method == 'GET':
@@ -233,20 +271,6 @@ def get_verify_code(uri: str, response: Response):
         print('验证码问题: ' + question_text)
         question_answer = input("请输入验证码:")
         question_code = question_answer.encode('gbk')
-
-
-def get_request_body(json_file: str) -> dict:
-    global question_code
-
-    with open(json_file, encoding='UTF-8', mode='r') as f:
-        file_content = f.read()
-
-    json_data = str_to_dict(file_content)
-
-    if 'questioncode' in json_data:
-        json_data['questioncode'] = question_code
-
-    return json_data
 
 
 def get_requests_body_attachment(json_file: str) -> dict[Any, tuple[Any, bytes, Any]]:
@@ -355,7 +379,7 @@ def parse_csv_file(csv_file: str):
                 # 建立字典
                 for row in reader:
                     row_obj = to_csv_row_obj(row)
-                    url_status_dict[generate_hash(row_obj.request_uri)] = UrlStatus(row_obj.serial_number, row_obj)
+                    url_status_dict[generate_hash(row_obj.serial_number)] = UrlStatus(row_obj.serial_number, row_obj)
 
                 total_requests = len(url_status_dict)
 
@@ -421,7 +445,7 @@ def main():
                         dest='log_level')
 
     args = parser.parse_args()
-    DOMAIN += args.domain
+    DOMAIN = get_domain(args.domain)
     hlog.set_level(args.log_level)
 
     try:

@@ -9,9 +9,9 @@
 8,考研报名,招生资讯,政策规章,NULL,2023年全国硕士研究生招生考试公告,GET,/info/article/id/464165.shtml,200,NULL,NULL
 9,考研报名,招生资讯,政策规章,NULL,2023年全国硕士研究生招生工作管理规定,GET,/info/article/id/463359.shtml,200,NULL,NULL
 10,考研报名,招生资讯,政策规章,NULL,教育部部署做好2023年全国硕士研究生考试招生工作,GET,/info/article/id/463341.shtml,200,NULL,NULL
-11,考研报名,招生资讯,报考指南,NULL,2023年考研报名人数汇总_考研报名人数多少,GET,/info/article/id/501505.shtml,200,NULL,NULL
-12,考研报名,招生资讯,报考指南,NULL,全国各省市2023年考研报考点网报公告及现场确认须知,GET,/info/article/id/501499.shtml,200,NULL,NULL
-13,考研报名,招生资讯,报考指南,NULL,全国各省市2023年硕士研究生网报公告及报考点设置,GET,/info/article/id/501485.shtml,200,NULL,NULL
+11,考研报名,招生资讯,报考指南,NULL,2023年考研报名人数汇总_考研报名人数多少,GET,/graduate/info/nid/270957/schoolID/754.shtml,200,NULL,NULL
+12,考研报名,招生资讯,报考指南,NULL,全国各省市2023年考研报考点网报公告及现场确认须知,GET,/graduate/info/nid/30501/schoolID/754.shtml,200,NULL,NULL
+13,考研报名,招生资讯,报考指南,NULL,全国各省市2023年硕士研究生网报公告及报考点设置,GET,/graduate/info/nid/43304/schoolID/754.shtml,200,NULL,NULL
 14,考研报名,招生资讯,考研常识,NULL,2023考研常识：五类数学的区别,GET,/info/article/id/461549.shtml,200,NULL,NULL
 15,考研报名,招生资讯,考研常识,NULL,2023考研常识：英语一与英语二的区别,GET,/info/article/id/461547.shtml,200,NULL,NULL
 16,考研报名,招生资讯,考研常识,NULL,2023考研常识：全国初试成绩基本要求分区是如何划定的,GET,/info/article/id/461535.shtml,200,NULL,NULL
@@ -46,7 +46,7 @@
 45,考研报名,招生信息,专业目录,NULL,西南石油大学2023年士兵计划非全日制硕士研究生招生专业目录,GET,/info/article/id/483521.shtml,200,NULL,NULL
 46,考研报名,招生信息,专业目录,NULL,西南石油大学2023年硕士推免生招生专业目录,GET,/info/article/id/483525.shtml,200,NULL,NULL
 47,考研报名,招生信息,参考书目,NULL,2023年天津师范大学硕士研究生招生考试各学部、学院复试参考书目,GET,/note/NoteShow/id/195749.shtml,200,NULL,NULL
-48,考研报名,招生信息,参考书目,NULL,中华女子学院2023年研究生招生部分专业复试推荐阅读书目,GET,/info/article/id/501471.shtml,200,NULL,NULL
+48,考研报名,招生信息,参考书目,NULL,中华女子学院2023年研究生招生部分专业复试推荐阅读书目,GET,/graduate/info/nid/215105/schoolID/242.shtml,200,NULL,NULL
 49,考研报名,招生信息,参考书目,NULL,江苏理工学院2023年硕士研究生招生考试复试科目主要参考书,GET,/info/article/id/491395.shtml,200,NULL,NULL
 50,考研报名,招生信息,在职硕士,NULL,2022年四川轻化工大学硕士研究生招生考试参考书目,GET,/info/article/id/419433.shtml,200,NULL,NULL
 51,考研报名,招生信息,在职硕士,NULL,2020考研备考：在职研究生到底要不要考？,GET,/info/article/id/272419.shtml,200,NULL,NULL

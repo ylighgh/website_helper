@@ -1,4 +1,16 @@
 {
-  "content": "testcontent123",
-  "questionId": 259561
+    "name": "cdgeekcamptest13",
+    "address": "",
+    "tel": "",
+    "email": "",
+    "post": "",
+    "contactor": "",
+    "traffic": "",
+    "level": "1",
+    "logo": "",
+    "smallLogo": "",
+    "notes": "",
+    "Submit": "",
+    "module": "organization",
+    "act": "insert"
 }

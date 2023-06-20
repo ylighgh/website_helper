@@ -1,0 +1,16 @@
+delete from ck_user where user_username like 'cdgeekcamptest%';
+delete from ck_info where InfoTitle like 'cdgeekcamptest%';
+delete from ck_news where N_Title like 'cdgeekcamptest%';
+delete from ck_subject_type where typeName like 'cdgeekcamptest%';
+delete from ck_subject where Name like 'cdgeekcamptest%';
+delete from ck_school where school_name like 'cdgeekcamptest%';
+delete from ck_college where college_name like 'cdgeekcamptest%';
+delete from ck_club where clubName like 'cdgeekcamptest%';
+delete from ck_tiaoji_school where title like 'cdgeekcamptest%';
+delete from ck_topic where title like 'cdgeekcamptest%';
+delete from ck_organization where name like 'cdgeekcamptest%';
+delete from ck_teach_type where name like 'cdgeekcamptest%';
+delete from ck_tuangou where title like 'cdgeekcamptest%';
+delete from ck_vote where VoteName like 'cdgeekcamptest%';
+delete from ck_book where book_name like 'cdgeekcamptest%';
+delete from ck_note where note_name like 'cdgeekcamptest%';
