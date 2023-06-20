@@ -1,14 +1,21 @@
 {
-    "username": "cdgeekcamptest1",
-    "password": "cdgeekcamptest1",
-    "repeat": "cdgeekcamptest1",
-    "email": "",
-    "usergroupid": "6",
-    "province": "",
-    "schoolId": "",
-    "org": "",
-    "name": "测试",
-    "Submit": "提交",
+    "N_Title": "cdgeekcamptest1",
+    "tag": "",
+    "N_ClassID": "1",
+    "N_Class2ID": "1",
+    "subTypeId": "",
+    "subject": "",
+    "specialityId": "",
+    "N_Author": "",
+    "N_Publish": "Y",
+    "keyWords": "",
+    "N_PIC": "",
+    "ActTime": "2023-06-16",
+    "N_Brief": "",
+    "Submit": "",
     "act": "insert",
-    "module": "user"
-}
+    "module": "news",
+    "id": "",
+    "fromurl": "",
+    "N_Content": ""
+  }

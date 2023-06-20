@@ -464,7 +464,7 @@ def main():
                  MetaData(total_requests, successful_requests, failed_requests, avg_response_time,
                           total_time))
         hlog.info("网页保存位置: %s" % save_position)
-        shutil.copy('v2.csv', f'var/www/{current_datetime}/{current_datetime}.csv')
+        shutil.copy(args.csv_file, f'var/www/{current_datetime}/{current_datetime}.csv')
     except HappyPyException as e:
         hlog.error(e)
         exit(1)
