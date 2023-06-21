@@ -234,6 +234,8 @@ def save_response_body(row_id: int, res_body: Response):
     with open(filename_body, 'w', encoding='UTF-8') as f:
         f.write(res_body.text.replace('gb2312', 'utf-8'))
 
+    print('%s,%s' % (res_body.url, round(res_body.elapsed.total_seconds(), 3)))
+
     table_data.append(
         [row_id, res_body.url, res_body.request.method, res_body.status_code,
          round(res_body.elapsed.total_seconds(), 3),
