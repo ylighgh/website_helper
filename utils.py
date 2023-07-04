@@ -109,11 +109,17 @@ def gen_html(filename: str, table_data: list, metadata: MetaData) -> None:
 
     for row in table_data:
         row_content = ""
+        except_response_code = int(row[8])
+        row = row[:8]
         for i, cell in enumerate(row):
-            if i == 5 or i == 6 or i == 7:
-                row_content += f'<td><a href="{cell}">{cell}</a></td>'
-            elif i == 3 and cell != 200:
-                row_content += f'<td style="color: red;">{cell}错误</td>'
+            if i == 5:
+                row_content += f'<td><a href="{cell}">request_headers.json</a></td>'
+            elif i == 6:
+                row_content += f'<td><a href="{cell}">response_headers.json</a></td>'
+            elif i == 7:
+                row_content += f'<td><a href="{cell}">response_body.txt</a></td>'
+            elif i == 3 and cell != except_response_code:
+                row_content += f'<td><text style="color: red;">{cell}错误</text>\n(期望代码：{except_response_code})</td>'
             elif i == 1:
                 row_content += f'<td><a href="{cell}">{cell}</a></td>'
             else:
@@ -138,7 +144,8 @@ def get_request_headers(url: str, content_type: str) -> dict:
         'Host': netloc,
         'Origin': f'{scheme}://{netloc}',
         'Referer': url,
-        'User-Agent': 'GeekCamp/1.0'
+        'User-Agent': 'GeekCamp/1.0',
+        'Connection': 'close'
     }
 
     return headers

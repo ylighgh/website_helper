@@ -34,7 +34,6 @@ table_data = []
 question_code = ""
 current_datetime = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
 line_number = 0
-
 total_requests = 0
 successful_requests = 0
 failed_requests = 0
@@ -113,19 +112,22 @@ class RowHandler:
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
         try:
             if 'h.chinakaoyan.com' in url:
-                response = requests.get(url, headers=headers, cookies=cookies)
+                response = requests.get(url, headers=headers, cookies=cookies, allow_redirects=False, timeout=5)
                 # get_college_id(url, response)
             else:
-                response = requests.get(url, headers=headers)
-            if response.status_code != 200:
-                failed_requests += 1
-                return response
+                response = requests.get(url, headers=headers, allow_redirects=False, timeout=5)
+                if response.status_code != int(row.except_response_code):
+                    response.close()
+                    failed_requests += 1
+                    return response
         except Exception as e:
             hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
             failed_requests += 1
+            response.close()
             return response
         else:
             successful_requests += 1
+            response.close()
             return response
 
     @staticmethod
@@ -146,16 +148,19 @@ class RowHandler:
 
         hlog.info("编号: %s,正在请求: %s,请求方式: %s" % (row.serial_number, url, row.request_method))
         try:
-            response = requests.post(url, headers=post_headers, data=data, cookies=cookies, files=files)
-            if response.status_code != 200:
+            response = requests.post(url, headers=post_headers, data=data, cookies=cookies, files=files, timeout=5)
+            if response.status_code != int(row.except_response_code):
                 failed_requests += 1
+                response.close()
                 return response
         except Exception as e:
             hlog.error("URL: %s, 请求失败,错误信息: %s" % (url, e))
+            response.close()
             failed_requests += 1
             return response
         else:
             successful_requests += 1
+            response.close()
             return response
 
 
@@ -196,7 +201,7 @@ def generate_hash(data, algorithm='sha256'):
     return hash_value
 
 
-def save_response_body(row_id: int, res_body: Response):
+def save_response_body(row_id: int, res_body: Response, except_status_code: int):
     global table_data
     uri = urlparse(res_body.url).path
 
@@ -234,14 +239,13 @@ def save_response_body(row_id: int, res_body: Response):
     with open(filename_body, 'w', encoding='UTF-8') as f:
         f.write(res_body.text.replace('gb2312', 'utf-8'))
 
-    print('%s,%s' % (res_body.url, round(res_body.elapsed.total_seconds(), 3)))
-
     table_data.append(
         [row_id, res_body.url, res_body.request.method, res_body.status_code,
          round(res_body.elapsed.total_seconds(), 3),
          filename_request_header.replace('var/www/' + current_datetime + '/', ''),
          filename_response_header.replace('var/www/' + current_datetime + '/', ''),
-         filename_body.replace('var/www/' + current_datetime + '/', '')])
+         filename_body.replace('var/www/' + current_datetime + '/', ''),
+         except_status_code])
 
 
 def get_college_id(url: str, response: Response):
@@ -419,6 +423,7 @@ def parse_csv_file(csv_file: str):
 
 def main():
     global DOMAIN
+    global successful_requests
     parser = argparse.ArgumentParser(prog='csv_url_visitor',
                                      description='',
                                      usage='%(prog)s -d|-f|-l')
@@ -459,12 +464,13 @@ def main():
                 total_response_time += round(v.resp.elapsed.total_seconds(), 3)
             else:
                 total_response_time += 0
-            save_response_body(v.row_id, v.resp)
+            save_response_body(v.row_id, v.resp, v.row.except_response_code)
         avg_response_time = round(total_response_time / total_requests, 3)
         save_position = config.cky_index_html.replace('${current_datetime}', current_datetime)
         gen_html(save_position, table_data,
                  MetaData(total_requests, successful_requests, failed_requests, avg_response_time,
-                          total_time))
+                          total_time), )
+
         hlog.info("网页保存位置: %s" % save_position)
         shutil.copy(args.csv_file, f'var/www/{current_datetime}/{current_datetime}.csv')
     except HappyPyException as e:
