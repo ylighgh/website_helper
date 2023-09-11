@@ -197,5 +197,3 @@
 196,考研问答,报考,学校问题,NULL,如何选学校,GET,/ask/questionShow/id/258927.shtml,200,NULL,NULL
 197,考研问答,报考,学校问题,NULL,求解清华大学保送生,GET,/ask/questionShow/id/258929.shtml,200,NULL,NULL
 198,考研问答,报考,学校问题,NULL,求土木工程硕士研究生考哪里,GET,/ask/questionShow/id/258633.shtml,200,NULL,NULL
-199,考研信息,院校,NULL,NULL,大连理工大学,GET,/info/article/id/497637.shtml,200,NULL,NULL
-200,考研信息,院校,NULL,NULL,上海理工大学,GET,/info/article/id/489181.shtml,200,NULL,NULL
